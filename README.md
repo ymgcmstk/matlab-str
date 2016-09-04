@@ -26,12 +26,10 @@ ans =
 
     14
 
->> helloworld.replace('world', 'beautiful world')
+>> helloworld.replace('world', 'beautiful world').val
 
 ans =
 
-  str with properties:
-
-    val: 'hello beautiful world !!'
+hello beautiful world !!
 
 ```

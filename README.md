@@ -7,29 +7,38 @@ All you need to do is add `addpath('/path/to/this/repository');` in startup.m.
 ```
 >> hello = str('hello');
 >> world = str('world');
->> helloworld = str(' ').join({hello, world, '!!'});
+>> helloworld = str(' ').join({hello, world});
 >> helloworld.val
 
 ans =
 
-hello world !!
+hello world
 
->> helloworld.upper().val
+>> helloworld = helloworld + '!!';
+>> helloworld.val
 
 ans =
 
-HELLO WORLD !!
+hello world!!
+
+>> helloworld = helloworld.replace('world', 'beautiful world');
+>> helloworld.val
+
+ans =
+
+hello beautiful world!!
+
+>> helloworld = helloworld.upper();
+>> helloworld.val
+
+ans =
+
+HELLO BEAUTIFUL WORLD!!
 
 >> len(helloworld)
 
 ans =
 
-    14
-
->> helloworld.replace('world', 'beautiful world').val
-
-ans =
-
-hello beautiful world !!
+    23
 
 ```

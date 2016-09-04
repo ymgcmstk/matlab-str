@@ -41,4 +41,16 @@ ans =
 
     23
 
+>> helloworld.startswith('HELLO')
+
+ans =
+
+     1
+
+>> helloworld.count('L')
+
+ans =
+
+     4
+
 ```

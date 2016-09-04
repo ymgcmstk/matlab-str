@@ -1,9 +1,9 @@
-* matlab-str: Python-like String Manipulation Class for Matlab
+# matlab-str: Python-like String Manipulation Class for Matlab
 
-** How to use
+## How to use
 All you need to do is add `addpath('/path/to/this/repository');` in startup.m.
 
-** Some examples
+## Some examples
 ```
 >> hello = str('hello');
 >> world = str('world');

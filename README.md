@@ -8,28 +8,28 @@ All you need to do is add `addpath('/path/to/this/repository');` in startup.m.
 >> hello = str('hello');
 >> world = str('world');
 >> helloworld = str(' ').join({hello, world});
->> helloworld.val
+>> helloworld
 
 ans =
 
 hello world
 
 >> helloworld = helloworld + '!!';
->> helloworld.val
+>> helloworld
 
 ans =
 
 hello world!!
 
 >> helloworld = helloworld.replace('world', 'beautiful world');
->> helloworld.val
+>> helloworld
 
 ans =
 
 hello beautiful world!!
 
 >> helloworld = helloworld.upper();
->> helloworld.val
+>> helloworld
 
 ans =
 

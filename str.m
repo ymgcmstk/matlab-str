@@ -12,6 +12,9 @@ classdef str
                 obj.val = '';
             end
         end
+        function display(obj)
+            obj.val
+        end
         function torf = eq(obj1, obj2)
             torf = strcmp(getChar(obj1), getChar(obj2));
         end
@@ -137,6 +140,9 @@ classdef str
         end
         function torf = endswith(obj1, obj2)
             torf = strncmp(fliplr(obj1.val), fliplr(getChar(obj2)), len(obj2));
+        end
+        function output_str = toString(obj)
+            output_str = obj.val;
         end
     end
 end
